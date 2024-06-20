@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      touch-action: pan-y; /* Permite el desplazamiento vertical en dispositivos táctiles */
+    }
+    .content {
+      height: 200%; /* Ajusta según la cantidad de contenido */
+      background: linear-gradient(to bottom, #f3f3f3, #e2e2e2); /* Fondo con degradado */
+      transform: translate3d(0, 0, 0); /* Ajuste para algunos navegadores móviles */
+      overflow-y: scroll; /* Desplazamiento vertical */
+      -webkit-overflow-scrolling: touch; /* Mejora el desplazamiento en dispositivos táctiles */
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <!-- Tu contenido aquí -->
+    <p>Este es un ejemplo de contenido desplazable.</p>
+    <p>Agrega más contenido aquí...</p>
+    <p>Más contenido...</p>
+    <p>Y más contenido...</p>
+    <p>Sigue agregando contenido...</p>
+    <p>Finalmente, el contenido que necesitas.</p>
+  </div>
+</body>
+</html>
